@@ -6,17 +6,19 @@ using System.Threading.Tasks;
 
 namespace GeometricShapes
 {
-    //this is for the Quadrilteral
-    class Shapes
+    class Rectangle
     {
         public int side1 { get; set; }
         public int side2 { get; set; }
-        public int side3 { get; set; }
-        public int side4 { get; set; }
 
         public int Perimeter()
         {
-            return side1 + side2 + side3 + side4;
+            return 2 * (side1 + side2);
+        }
+
+        public int Area()
+        {
+            return side1 * side2;
         }
     }
 }
