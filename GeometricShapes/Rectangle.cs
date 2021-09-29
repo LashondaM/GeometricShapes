@@ -6,19 +6,18 @@ using System.Threading.Tasks;
 
 namespace GeometricShapes
 {
-    class Rectangle
+    class Rectangle : Shapes
     {
-        public int side1 { get; set; }
-        public int side2 { get; set; }
-
-        public int Perimeter()
+        public new void Print() // use new when hiding is intended instead of using inherited
         {
-            return 2 * (side1 + side2);
+            Console.WriteLine($"Perimeter: {Perimeter()}; Area: {Area()}");
         }
-
-        public int Area()
-        {
+         public int Area()
+         {
             return side1 * side2;
-        }
+         }
+         public Rectangle(int SideA, int SideB) : base(SideA, SideB, SideA, SideB)
+         {
+         }
     }
 }

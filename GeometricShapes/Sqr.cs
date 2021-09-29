@@ -6,18 +6,28 @@ using System.Threading.Tasks;
 
 namespace GeometricShapes
 {
-    class Sqr
+    class Sqr : Rectangle
     {
-        public int side1 { get; set; }
+        //public int side1 { get; set; }
 
-        public int Perimeter()
+        public Sqr(int SideC) : base(SideC, SideC)
         {
-            return side1 * 4;
+            //side1 = SideC;
+            //side2 = SideC;
+            //side3 = SideC;
+            //side4 = SideC;
         }
+        //public Sqr() { }
 
-        public int Area()
-        {
-            return side1 * side1;
-        }
+
+        //public int Perimeter()
+        //{
+        //    return side1 * 4;
+        //}
+
+        //public int Area()
+        //{
+        //    return side1 * side1;
+        //}
     }
 }
