@@ -29,6 +29,15 @@ namespace GeometricShapes
             };
             Console.WriteLine($"Perimeter is {sq1.Perimeter()}");
             Console.WriteLine($"Area is {sq1.Area()}");
+
+            var tri = new Triangle()
+            {
+                side1 = 19,
+                side2 = 19,
+                side3 = 38
+            };
+            Console.WriteLine($"Area is {tri.Area()}");
+            Console.WriteLine($"Perimeter is {tri.Perimeter()}");
         }
 
     }
